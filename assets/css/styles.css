@@ -157,6 +157,10 @@ p {
   margin-bottom: 0;
 }
 
+.links{
+  padding: 10px 10px 10px 10px;
+}
+
 .main-wrapper {
   background: #fff;
   padding: 60px;
