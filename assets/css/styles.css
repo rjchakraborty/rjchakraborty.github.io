@@ -314,14 +314,22 @@ p {
 .footer {
   padding: 30px;
   padding-top: 60px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 .footer .copyright {
   line-height: 1.6;
-  color: #545e6c;
+  color: #fff;
   font-size: 13px;
 }
 .footer .fa-heart {
-  color: #fb866a;
+  color: #ff6b9d;
+}
+.footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+.footer a:hover {
+  color: #ffd700;
 }
 
 @media (max-width: 767.98px) {
@@ -342,6 +350,24 @@ p {
 
   .main-wrapper .upper-row {
     margin-bottom: 0;
+  }
+  
+  body {
+    background: #fff;
+  }
+  
+  .wrapper {
+    box-shadow: none;
+    border-radius: 0;
+  }
+  
+  .sidebar-wrapper .profile {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .links {
+    margin: 8px;
   }
 }
 @media (min-width: 992px) {
@@ -442,4 +468,96 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar-wrapper h5,
 .sidebar-wrapper h6 {
   color: #fff;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Project links styling */
+.main-wrapper a[href*="play.google.com"],
+.main-wrapper a[href*="apps.apple.com"],
+.main-wrapper a[href*="github.com"] {
+  display: inline-block;
+  padding: 4px 8px;
+  background: rgba(102, 126, 234, 0.1);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  word-break: break-word;
+}
+
+.main-wrapper a[href*="play.google.com"]:hover,
+.main-wrapper a[href*="apps.apple.com"]:hover,
+.main-wrapper a[href*="github.com"]:hover {
+  background: rgba(102, 126, 234, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Improve list styling in projects */
+.main-wrapper .projects-section ul {
+  margin-left: 20px;
+}
+
+.main-wrapper .projects-section li {
+  margin-bottom: 8px;
+  line-height: 1.7;
+}
+
+/* Section spacing */
+.main-wrapper .section {
+  margin-bottom: 50px;
+}
+
+/* Improve project items */
+.main-wrapper .projects-section .item {
+  margin-bottom: 25px;
+}
+
+/* Animation for skill bars */
+@keyframes fillBar {
+  from {
+    width: 0;
+  }
+}
+
+.skillset .theme-progress-bar {
+  animation: fillBar 1.5s ease-in-out;
+}
+
+/* Better styling for email link in profile */
+.profile-container a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.profile-container a:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.05);
+}
+
+/* Improve readability of inline styles */
+.main-wrapper p[style*="font-size:11pt"] {
+  font-size: 15px !important;
+  line-height: 1.8 !important;
+}
+
+.main-wrapper ul[style*="font-size:11pt"] li,
+.main-wrapper ol[style*="font-size:11pt"] li {
+  font-size: 15px !important;
+  line-height: 1.7 !important;
+}
+
+/* Better margin for project descriptions */
+p[style*="margin-left:48px"] {
+  margin-left: 30px !important;
+}
+
+ul[style*="margin-left:48px"] {
+  margin-left: 40px !important;
 }
