@@ -8,11 +8,12 @@
 */
 body {
   font-family: "Roboto", sans-serif;
-  color: #545e6c;
-  background: #f5f5f5;
-  font-size: 14px;
+  color: #2d3748;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
 }
 
 h1,
@@ -25,40 +26,43 @@ h6 {
 }
 
 a {
-  color: #2e4049;
+  color: #667eea;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 a:hover {
-  text-decoration: underline;
-  color: #10171a;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
+  text-decoration: none;
+  color: #764ba2;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
 }
 a:focus {
   text-decoration: none;
 }
 
 p {
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 .wrapper {
-  background: #4b6a78;
-  max-width: 980px;
+  background: #fff;
+  max-width: 1200px;
   margin: 0 auto;
   position: relative;
-  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .sidebar-wrapper {
-  background: #4b6a78;
+  background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
   position: absolute;
   right: 0;
-  width: 280px;
+  width: 320px;
   height: 100%;
   min-height: 800px;
   color: #fff;
@@ -67,30 +71,39 @@ p {
   color: #fff;
 }
 .sidebar-wrapper .profile-container {
-  padding: 30px;
-  background: rgba(0, 0, 0, 0.2);
+  padding: 40px 30px;
+  background: rgba(0, 0, 0, 0.15);
   text-align: center;
   color: #fff;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 .sidebar-wrapper .name {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 900;
   margin-top: 0;
   margin-bottom: 10px;
+  letter-spacing: 0.5px;
 }
 .sidebar-wrapper .tagline {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 15px;
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 0;
+  line-height: 1.5;
 }
 .sidebar-wrapper .profile {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   vertical-align: middle;
-  width: 100px;
-  height: 100px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+.sidebar-wrapper .profile:hover {
+  transform: scale(1.05);
 }
 .sidebar-wrapper .contact-list .svg-inline--fa {
   margin-right: 5px;
@@ -111,15 +124,19 @@ p {
 }
 .sidebar-wrapper .container-block-title {
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 10px;
 }
 .sidebar-wrapper .degree {
-  font-size: 14px;
+  font-size: 15px;
   margin-top: 0;
   margin-bottom: 5px;
+  font-weight: 600;
 }
 .sidebar-wrapper .education-container .item {
   margin-bottom: 15px;
@@ -128,19 +145,20 @@ p {
   margin-bottom: 0;
 }
 .sidebar-wrapper .education-container .meta {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.85);
   font-weight: 500;
   margin-bottom: 0px;
   margin-top: 0;
-  font-size: 14px;
+  font-size: 13px;
 }
 .sidebar-wrapper .education-container .time {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.85);
   font-weight: 500;
   margin-bottom: 0px;
+  font-size: 13px;
 }
 .sidebar-wrapper .languages-container .lang-desc {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.75);
 }
 .sidebar-wrapper .languages-list {
   margin-bottom: 0;
@@ -162,27 +180,42 @@ p {
 }
 
 .links {
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
+  display: inline-block;
+  margin: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  line-height: 28px;
+  transition: all 0.3s ease;
+}
+.links:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .main-wrapper {
   background: #fff;
   padding: 60px;
-  padding-right: 300px;
+  padding-right: 360px;
 }
 .main-wrapper .section-title {
   text-transform: uppercase;
-  font-size: 20px;
-  font-weight: 500;
-  color: #2e4049;
+  font-size: 24px;
+  font-weight: 700;
+  color: #667eea;
   position: relative;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
 }
 .main-wrapper .section-title .icon-holder {
-  width: 30px;
-  height: 30px;
-  margin-right: 8px;
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
   display: inline-block;
   color: #fff;
   -webkit-border-radius: 50%;
@@ -193,15 +226,16 @@ p {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  background: #2e4049;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   position: relative;
-  top: -8px;
+  top: -4px;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
 }
 .main-wrapper .section-title .icon-holder .svg-inline--fa {
-  font-size: 14px;
-  margin-top: 6px;
+  font-size: 18px;
+  margin-top: 10px;
 }
 .main-wrapper .section {
   margin-bottom: 60px;
@@ -215,21 +249,24 @@ p {
   margin-bottom: 2px;
 }
 .main-wrapper .job-title {
-  color: #3f4650;
-  font-size: 16px;
+  color: #2d3748;
+  font-size: 18px;
   margin-top: 0;
   margin-bottom: 0;
-  font-weight: 500;
+  font-weight: 600;
 }
 .main-wrapper .time {
   position: absolute;
   right: 0;
   top: 0;
-  color: #2495b4;
+  color: #667eea;
+  font-weight: 600;
+  font-size: 14px;
 }
 .main-wrapper .company {
   margin-bottom: 10px;
-  color: #324054;
+  color: #4a5568;
+  font-size: 15px;
 }
 .main-wrapper .project-title {
   font-size: 16px;
@@ -249,37 +286,50 @@ p {
   overflow: hidden;
 }
 .skillset .level-title {
-  font-size: 14px;
+  font-size: 15px;
   margin-top: 0;
   margin-bottom: 12px;
+  font-weight: 600;
+  color: #2d3748;
 }
 .skillset .level-bar {
-  height: 12px;
-  background: #f5f5f5;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-  border-radius: 2px;
+  height: 16px;
+  background: #e2e8f0;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  overflow: hidden;
 }
 .skillset .theme-progress-bar {
-  background: #5f8697;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+  transition: width 0.6s ease;
 }
 
 .footer {
   padding: 30px;
   padding-top: 60px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 .footer .copyright {
   line-height: 1.6;
-  color: #545e6c;
+  color: #fff;
   font-size: 13px;
 }
 .footer .fa-heart {
-  color: #fb866a;
+  color: #ff6b9d;
+}
+.footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+.footer a:hover {
+  color: #ffd700;
 }
 
 @media (max-width: 767.98px) {
@@ -300,6 +350,24 @@ p {
 
   .main-wrapper .upper-row {
     margin-bottom: 0;
+  }
+  
+  body {
+    background: #fff;
+  }
+  
+  .wrapper {
+    box-shadow: none;
+    border-radius: 0;
+  }
+  
+  .sidebar-wrapper .profile {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .links {
+    margin: 8px;
   }
 }
 @media (min-width: 992px) {
@@ -325,4 +393,171 @@ p {
 
 .skill-category {
   font-weight: bold;
+  color: #667eea;
+}
+
+/* Additional enhancements for better design */
+.main-wrapper .experiences-section .item,
+.main-wrapper .projects-section .item {
+  padding: 20px;
+  background: #f7fafc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border-left: 4px solid #667eea;
+  transition: all 0.3s ease;
+}
+
+.main-wrapper .experiences-section .item:hover,
+.main-wrapper .projects-section .item:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transform: translateX(5px);
+}
+
+.main-wrapper .summary {
+  background: #f7fafc;
+  padding: 25px;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+  line-height: 1.8;
+}
+
+strong {
+  color: #667eea;
+  font-weight: 600;
+}
+
+.job-responsibilities {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+.job-responsibilities li {
+  padding-left: 25px;
+  position: relative;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.job-responsibilities li:before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.contact-container {
+  text-align: center;
+  padding: 25px 30px !important;
+}
+
+.sidebar-wrapper .container-block {
+  padding: 25px 30px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #2d3748;
+}
+
+.sidebar-wrapper h1,
+.sidebar-wrapper h2,
+.sidebar-wrapper h3,
+.sidebar-wrapper h4,
+.sidebar-wrapper h5,
+.sidebar-wrapper h6 {
+  color: #fff;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Project links styling */
+.main-wrapper a[href*="play.google.com"],
+.main-wrapper a[href*="apps.apple.com"],
+.main-wrapper a[href*="github.com"] {
+  display: inline-block;
+  padding: 4px 8px;
+  background: rgba(102, 126, 234, 0.1);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  word-break: break-word;
+}
+
+.main-wrapper a[href*="play.google.com"]:hover,
+.main-wrapper a[href*="apps.apple.com"]:hover,
+.main-wrapper a[href*="github.com"]:hover {
+  background: rgba(102, 126, 234, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Improve list styling in projects */
+.main-wrapper .projects-section ul {
+  margin-left: 20px;
+}
+
+.main-wrapper .projects-section li {
+  margin-bottom: 8px;
+  line-height: 1.7;
+}
+
+/* Section spacing */
+.main-wrapper .section {
+  margin-bottom: 50px;
+}
+
+/* Improve project items */
+.main-wrapper .projects-section .item {
+  margin-bottom: 25px;
+}
+
+/* Animation for skill bars */
+@keyframes fillBar {
+  from {
+    width: 0;
+  }
+}
+
+.skillset .theme-progress-bar {
+  animation: fillBar 1.5s ease-in-out;
+}
+
+/* Better styling for email link in profile */
+.profile-container a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.profile-container a:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.05);
+}
+
+/* Improve readability of inline styles */
+.main-wrapper p[style*="font-size:11pt"] {
+  font-size: 15px !important;
+  line-height: 1.8 !important;
+}
+
+.main-wrapper ul[style*="font-size:11pt"] li,
+.main-wrapper ol[style*="font-size:11pt"] li {
+  font-size: 15px !important;
+  line-height: 1.7 !important;
+}
+
+/* Better margin for project descriptions */
+p[style*="margin-left:48px"] {
+  margin-left: 30px !important;
+}
+
+ul[style*="margin-left:48px"] {
+  margin-left: 40px !important;
 }
