@@ -1,0 +1,208 @@
+{
+  "pages": [
+    [
+      {
+        "kind": "title",
+        "text": "Raja Chakraborty"
+      },
+      {
+        "kind": "subtitle",
+        "text": "AI Engineer | Applied AI, LLM Applications, RAG & Agents"
+      },
+      {
+        "kind": "body",
+        "text": "Kolkata, India | Fully remote | rjchakraborty21@gmail.com"
+      },
+      {
+        "kind": "body",
+        "text": "rjchakraborty.github.io/ | github.com/rjchakraborty"
+      },
+      {
+        "kind": "body",
+        "text": "www.linkedin.com/in/rjchakraborty21/"
+      },
+      {
+        "kind": "section",
+        "text": "PROFESSIONAL SUMMARY"
+      },
+      {
+        "kind": "body",
+        "text": "Product engineer with 10+ years of software delivery, focused on applied AI applications. Connects LLM integrations, RAG, prompt design and agent/tool workflows to backend services, data and user interfaces. Owns requirements, implementation, QA, release validation and production support across web and mobile products."
+      },
+      {
+        "kind": "section",
+        "text": "TECHNICAL SKILLS"
+      },
+      {
+        "kind": "body",
+        "text": "AI: Generative AI, LLM applications, retrieval-augmented generation (RAG), prompt engineering, AI agents and tool workflows, AI-assisted automation; vector search concepts"
+      },
+      {
+        "kind": "body",
+        "text": "Backend: Python, Node.js, REST APIs, PostgreSQL, MongoDB, Redis, Firebase, SQL, data modeling, API integrations"
+      },
+      {
+        "kind": "body",
+        "text": "Mobile: Flutter, Dart, native Android, Java, Kotlin, Firebase, mobile release validation"
+      },
+      {
+        "kind": "body",
+        "text": "Web: React, Next.js, TypeScript, JavaScript, Tailwind CSS"
+      },
+      {
+        "kind": "body",
+        "text": "Delivery: Git, CI/CD, software testing, production debugging, product shaping, prioritization, QA and release coordination"
+      },
+      {
+        "kind": "section",
+        "text": "RECENT AI-ENABLED PROJECTS"
+      },
+      {
+        "kind": "body",
+        "text": "GoalX"
+      },
+      {
+        "kind": "body",
+        "text": "Flutter goal and savings tracker with recurring plans, versioned backup, optional Firestore sync and review-before-write AI guidance."
+      },
+      {
+        "kind": "body",
+        "text": "github.com/rjchakraborty/goalx"
+      },
+      {
+        "kind": "body",
+        "text": "Robot/Shift"
+      },
+      {
+        "kind": "body",
+        "text": "Robotics and ROS 2 learning platform with an AI tutor, built with Next.js, React, TypeScript and Firebase."
+      },
+      {
+        "kind": "body",
+        "text": "github.com/rjchakraborty/robot-shift"
+      },
+      {
+        "kind": "body",
+        "text": "PDFVoice"
+      },
+      {
+        "kind": "body",
+        "text": "AI-assisted macOS PDF-to-audio project exploring on-device OCR, neural narration, forced alignment and synchronized text highlighting, using SwiftUI, PDFKit, Vision, MLX and ONNX Runtime."
+      },
+      {
+        "kind": "body",
+        "text": "github.com/rjchakraborty/pdfvoice"
+      },
+      {
+        "kind": "body",
+        "text": "LocalDub"
+      },
+      {
+        "kind": "body",
+        "text": "Open-source audio dubbing preview for Apple Silicon using Python and MLX: on-device Whisper transcription, Hy-MT2 translation and Qwen3-TTS reference-voice synthesis. Sequential batches, editable review, selective regeneration, and MP3/WAV/WebVTT exports. Output requires listening review."
+      },
+      {
+        "kind": "body",
+        "text": "github.com/rjchakraborty/localdub"
+      },
+      {
+        "kind": "section",
+        "text": "PRODUCT DELIVERY"
+      },
+      {
+        "kind": "body",
+        "text": "Extensive product-management work across requirements, prioritization, UX, cross-functional execution, QA, release coordination and operational support. Shipped product experience includes school planning (Classify), savings and payments (Sav Money), and payroll, purchasing, inventory, production and accounting (Tea ERP)."
+      }
+    ],
+    [
+      {
+        "kind": "section",
+        "text": "PROFESSIONAL EXPERIENCE"
+      },
+      {
+        "kind": "body",
+        "text": "Full Stack Engineer | Piston"
+      },
+      {
+        "kind": "body",
+        "text": "December 2023 - Present"
+      },
+      {
+        "kind": "body",
+        "text": "- Build product workflows across responsive web applications, backend services and mobile integrations using Next.js, Python, MongoDB, Redis and Flutter."
+      },
+      {
+        "kind": "body",
+        "text": "- Translate requirements into APIs, data flows, user-facing features and operational tooling. Own debugging, testing, release validation and production issue resolution."
+      },
+      {
+        "kind": "body",
+        "text": "- Apply AI and machine-learning capabilities where they fit the product workflow."
+      },
+      {
+        "kind": "body",
+        "text": "Full Stack Developer | Ancile Technologies"
+      },
+      {
+        "kind": "body",
+        "text": "November 2017 - November 2023"
+      },
+      {
+        "kind": "body",
+        "text": "- Built mobile applications, responsive web applications, backend services, REST APIs, data models and integrations across customer products and business systems."
+      },
+      {
+        "kind": "body",
+        "text": "- Owned delivery from requirements and UX through implementation, testing, deployment, release validation and operational support using React, Next.js, Node.js, Flutter, native Android, MongoDB and Firebase."
+      },
+      {
+        "kind": "body",
+        "text": "- Delivered messaging, payment, location and subscription workflows with SDKs, Maps, Firebase and payment integrations."
+      },
+      {
+        "kind": "body",
+        "text": "Flutter and Native Android Developer | Guni - Messaging Platform"
+      },
+      {
+        "kind": "body",
+        "text": "July 2016 - October 2017"
+      },
+      {
+        "kind": "body",
+        "text": "- Developed Android mobile automation and network-testing workflows, including scripted WebView interactions, ADB commands, network controls and call testing."
+      },
+      {
+        "kind": "body",
+        "text": "Android Developer | RJS Tech Solution"
+      },
+      {
+        "kind": "body",
+        "text": "May 2015 - June 2016"
+      },
+      {
+        "kind": "body",
+        "text": "- Developed native Android applications and REST/JSON integrations. Built and debugged services, content providers, broadcast receivers and location-aware workflows."
+      },
+      {
+        "kind": "section",
+        "text": "EDUCATION"
+      },
+      {
+        "kind": "body",
+        "text": "Post Graduate Diploma, Remote Sensing & GIS | Jadavpur University CAD Centre"
+      },
+      {
+        "kind": "body",
+        "text": "Bachelor of Arts, Geography | A.B.N. Seal College"
+      },
+      {
+        "kind": "section",
+        "text": "WORK PREFERENCE"
+      },
+      {
+        "kind": "body",
+        "text": "Fully remote AI, backend, full-stack or mobile engineering. Open to employers in India and international teams hiring remotely from India."
+      }
+    ]
+  ]
+}
